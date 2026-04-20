@@ -1,0 +1,11 @@
+id,name,gender,rollNo,class_id,city,country,region,landmark,houseNo
+1,Amit Kumar,Male,ECE101,1,Chennai,India,Tamil Nadu,Near Central Library,12A
+2,Priya Sharma,Female,ECE102,1,Bengaluru,India,Karnataka,MG Road,45B
+3,Rahul Verma,Male,ECE201,2,Hyderabad,India,Telangana,Near Charminar,8C
+4,Ananya Iyer,Female,ECE202,2,Coimbatore,India,Tamil Nadu,Gandhipuram,22
+5,Suresh Reddy,Male,ECE301,3,Vijayawada,India,Andhra Pradesh,Bus Stand Road,17D
+6,Neha Gupta,Female,ECE302,3,Delhi,India,Delhi,Near Metro Station,90
+7,Karthik Raj,Male,ECE401,4,Madurai,India,Tamil Nadu,Meenakshi Temple,5F
+8,Pooja Mehta,Female,ECE402,4,Ahmedabad,India,Gujarat,CG Road,61
+9,Arjun Singh,Male,ECE501,5,Jaipur,India,Rajasthan,Hawa Mahal Road,33
+10,Divya Patel,Female,ECE502,5,Surat,India,Gujarat,Textile Market,14B

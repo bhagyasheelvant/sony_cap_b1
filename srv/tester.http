@@ -1,0 +1,81 @@
+###Access the service document
+http://localhost:4004/odata/v4/CatalogService
+###Access the service metadata document
+http://localhost:4004/odata/v4/CatalogService/$metadata
+###GET ALL the employee data
+http://localhost:4004/odata/v4/CatalogService/EmployeeSrv
+###GET SINGLE employee data by KEY - (PICK A KEY FROM THE CALL)
+http://localhost:4004/odata/v4/CatalogService/EmployeeSrv/02BD2137-0890-1EEA-A6C2-BB55C19787FB
+###POST the employee data - create
+POST http://localhost:4004/odata/v4/CatalogService/EmployeeSrv
+Content-Type: application/json
+
+{
+  "nameFirst": "Christano",
+  "nameMiddle": null,
+  "nameLast": "Ronaldo",
+  "nameInitials": null,
+  "sex": "M",
+  "language": "E",
+  "phoneNumber": null,
+  "email": "christano@itelo.info",
+  "loginName": "Christano",
+  "Currency_code": "USD",
+  "salaryAmount": 55549,
+  "accountNumber": "111222333",
+  "bankId": "51000065",
+  "bankName": "My Bank of Antioch"
+}
+###PATCH the employee data - update -> COPY THE ID FROM THE LAST RESULT
+PATCH http://localhost:4004/odata/v4/CatalogService/EmployeeSrv/979e3701-e0fb-4ab1-bafa-fa6e630f0f62
+Content-Type: application/json
+
+{
+  "Currency_code": "EUR",
+  "salaryAmount": 1000000 
+}
+###DELETE the employee data - remove
+DELETE http://localhost:4004/odata/v4/CatalogService/EmployeeSrv/585ea48b-a7a4-476f-b946-cdf744af01d2
+
+###GET all the orders
+http://localhost:4004/odata/v4/CatalogService/PurchaseOrderSet
+
+
+###GET single purchase order
+http://localhost:4004/odata/v4/CatalogService/PurchaseOrderSet/74867AD200E41EDBA5D8B0C98DC2A052
+
+###Lazy loading where we load items of that order using association 
+###Calling only items data
+http://localhost:4004/odata/v4/CatalogService/PurchaseOrderSet/74867AD200E41EDBA5D8B0C98DC2A052/Items
+
+###Calling header and items data
+http://localhost:4004/odata/v4/CatalogService/PurchaseOrderSet/74867AD200E41EDBA5D8B0C98DC2A052?$expand=Items
+
+
+###Pagination
+# http://localhost:4004/odata/v4/CatalogService/PurchaseOrderSet?$top=2&$skip=2
+http://localhost:4004/odata/v4/CatalogService/PurchaseOrderSet
+
+###Count the records
+http://localhost:4004/odata/v4/CatalogService/PurchaseOrderSet/$count
+
+
+
+### Filter data by conditions
+http://localhost:4004/odata/v4/CatalogService/EmployeeSrv?$filter=bankName eq 'My Bank of Antioch'
+
+
+### Pattern search
+http://localhost:4004/odata/v4/CatalogService/EmployeeSrv?$filter=contains(nameFirst, 'Su')
+
+
+### Calling non instance bound function, functions are always get call
+GET http://localhost:4004/odata/v4/CatalogService/getLargestOrder()
+
+### Calling instance bound action
+GET http://localhost:4004/odata/v4/CatalogService/PurchaseOrderSet/74867AD200E41EDBA5D8B0C98DC82052
+
+### POST
+POST http://localhost:4004/odata/v4/CatalogService/PurchaseOrderSet/74867AD200E41EDBA5D8B0C98DC82052/boost
+Content-Type: application/json
+

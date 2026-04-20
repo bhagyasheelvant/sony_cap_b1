@@ -1,0 +1,61 @@
+id,locale,bookName
+1,en,Electronic Devices and Circuit Theory
+1,ja,電子デバイスと回路理論
+1,ru,Электронные устройства и теория цепей
+1,fr,Dispositifs électroniques et théorie des circuits
+2,en,Microelectronic Circuits
+2,ja,マイクロエレクトロニクス回路
+2,ru,Микроэлектронные схемы
+2,fr,Circuits microélectroniques
+3,en,Signals and Systems
+3,ja,信号とシステム
+3,ru,Сигналы и системы
+3,fr,Signaux et systèmes
+4,en,Digital Design
+4,ja,デジタル設計
+4,ru,Цифровое проектирование
+4,fr,Conception numérique
+5,en,Communication Systems
+5,ja,通信システム
+5,ru,Системы связи
+5,fr,Systèmes de communication
+6,en,Control Systems Engineering
+6,ja,制御システム工学
+6,ru,Инженерия систем управления
+6,fr,Génie des systèmes de commande
+7,en,Electromagnetic Waves and Radiating Systems
+7,ja,電磁波と放射システム
+7,ru,Электромагнитные волны и излучающие системы
+7,fr,Ondes électromagnétiques et systèmes rayonnants
+8,en,Analog Communication
+8,ja,アナログ通信
+8,ru,Аналоговая связь
+8,fr,Communication analogique
+9,en,Digital Signal Processing
+9,ja,ディジタル信号処理
+9,ru,Цифровая обработка сигналов
+9,fr,Traitement numérique du signal
+10,en,VLSI Design
+10,ja,VLSI設計
+10,ru,Проектирование СБИС
+10,fr,Conception VLSI
+11,en,Microwave Engineering
+11,ja,マイクロ波工学
+11,ru,СВЧ-техника
+11,fr,Génie micro-ondes
+12,en,Embedded Systems
+12,ja,組込みシステム
+12,ru,Встроенные системы
+12,fr,Systèmes embarqués
+13,en,Linear Integrated Circuits
+13,ja,線形集積回路
+13,ru,Линейные интегральные схемы
+13,fr,Circuits intégrés linéaires
+14,en,Antenna Theory
+14,ja,アンテナ理論
+14,ru,Теория антенн
+14,fr,Théorie des antennes
+15,en,Optical Fiber Communications
+15,ja,光ファイバ通信
+15,ru,Оптоволоконная связь
+15,fr,Communications par fibre optique
