@@ -3,6 +3,7 @@
 Welcome to your new project.
 
 It contains these folders and files, following our recommended project layout:
+//rob changes
 
 File or Folder | Purpose
 ---------|----------
